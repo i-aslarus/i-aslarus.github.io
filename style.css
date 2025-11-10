@@ -15,7 +15,7 @@ html, body { margin: 0; padding: 0; }
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 800px at 10% -10%, #1f2540 0%, transparent 60%), var(--bg);
+  background: radial-gradient(1200px 800px at 10% -10%, #f3ede1 0%, transparent 60%), var(--bg);
   line-height: 1.6;
 }
 
@@ -24,7 +24,8 @@ body {
 
 .site-header {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(15,17,21,0.75); backdrop-filter: blur(8px);
+  background: var(--card);            /* same as project tiles */
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
@@ -33,7 +34,7 @@ nav .nav-link {
   color: var(--text); text-decoration: none; margin-left: 18px; padding: 8px 12px;
   border-radius: 8px; transition: background 120ms ease;
 }
-nav .nav-link:hover { background: #1a1f2b; }
+nav .nav-link:hover { background: var(--card-hover); }  /* subtle cream hover */
 
 .about { display: grid; grid-template-columns: 160px 1fr; gap: 28px; align-items: center; }
 .headshot {
@@ -63,7 +64,8 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; }
 }
 .card:hover, .card:focus-within {
   transform: translateY(-2px);
-  border-color: #3b4762;
+  background: var(--card-hover);      /* slightly darker cream */
+  border-color: var(--border);
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 .card-title {
@@ -71,7 +73,8 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; }
 }
 .card-desc {
   position: absolute; inset: 0; padding: 16px;
-  background: rgba(10,12,18,0.9);
+  background: rgba(249, 244, 235, 0.96); /* light cream overlay (matches --card-ish) */
+  color: var(--text);
   opacity: 0; pointer-events: none; transition: opacity 140ms ease;
   border-radius: 14px; border: 1px solid var(--border);
 }
@@ -82,6 +85,17 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; }
   background: rgba(125,211,252,0.08); border: 1px solid rgba(125,211,252,0.25);
   padding: 4px 8px; border-radius: 999px;
 }
+
+/* 4) Hide the project title on hover/open so it doesn’t ghost behind the overlay */
+.card-title {
+  transition: opacity 100ms ease;
+}
+.card:hover .card-title,
+.card.is-open .card-title {
+  opacity: 0;
+  visibility: hidden; /* prevents screen readers from double-reading */
+}
+
 
 .hint { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
 
