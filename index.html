@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — PhD Student</title>
+  <meta name="description" content="PhD student personal website: research interests, projects, CV." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#about">Your Name</a>
+      <nav>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="https://docs.google.com/your-google-doc-id-here" target="_blank" rel="noopener" class="nav-link">CV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section container about">
+      <img src="headshot.jpg" alt="Headshot of Your Name" class="headshot" />
+      <div class="about-text">
+        <h1>Hi, I’m Your Name.</h1>
+        <p>
+          I’m a PhD student in <em>Your Field</em> at <em>Your University</em>. My research spans
+          <strong>Topic A</strong>, <strong>Topic B</strong>, and <strong>Topic C</strong>. I build and analyze
+          <strong>XYZ</strong> to understand <strong>big-picture goal in one line</strong>. I’m especially interested
+          in <strong>specific angle</strong> and apply <strong>methods/tools</strong> to real-world datasets and experiments.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div id="projectGrid" class="project-grid" aria-live="polite"></div>
+      <!-- Optional: tiny note for mobile -->
+      <p class="hint">Tip: tap a tile to view its description.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Your Name • <a href="#about">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
