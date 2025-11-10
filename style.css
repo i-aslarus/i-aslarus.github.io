@@ -89,12 +89,12 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; color: var(--brand); }
 
 /* 4) Hide the project title on hover/open so it doesn’t ghost behind the overlay */
 .card-title {
-  color: var(--brand);   /* brighter turquoise for emphasis */
+  color: var(--accent);   /* brighter turquoise for emphasis */
   transition: opacity 100ms ease;
 }
 .card:hover .card-title,
 .card.is-open .card-title {
-  color: var(--accent);   /* brighter turquoise for emphasis */
+  color: var(--brand);   /* darker turquoise */
   font-weight: 700;
   letter-spacing: 0.2px;
   transition: opacity 120ms ease;
