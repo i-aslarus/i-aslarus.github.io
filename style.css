@@ -41,10 +41,10 @@ nav .nav-link:hover { background: var(--card-hover); }  /* subtle cream hover */
   width: 160px; height: 160px; object-fit: cover; border-radius: 14px;
   border: 1px solid var(--border); background: #222; box-shadow: 0 6px 22px rgba(0,0,0,0.35);
 }
-.about h1 { margin: 0 0 10px; font-size: 1.9rem; line-height: 1.2; }
-.about p { margin: 0; color: var(--muted); }
+.about h1 { margin: 0 0 10px; font-size: 1.9rem; line-height: 1.2; color: var(--accent); }
+.about p { margin: 0; color: var(--text); }
 
-h2 { font-size: 1.6rem; margin: 0 0 18px; }
+h2 { font-size: 1.6rem; margin: 0 0 18px; color: var(--accent); }
 
 .project-grid {
   display: grid;
