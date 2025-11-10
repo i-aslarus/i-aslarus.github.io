@@ -20,7 +20,7 @@ body {
 }
 
 .container { width: min(1100px, 92%); margin: 0 auto; }
-.section { padding: 72px 0; }
+.section { padding: 36px 0; }
 
 .site-header {
   position: sticky; top: 0; z-index: 10;
@@ -134,11 +134,13 @@ html { scroll-behavior: smooth; }
 .card-title {
   transition: opacity 120ms ease;
 }
+/*
 .card:hover .card-title,
 .card.is-open .card-title {
   opacity: 0;
   visibility: hidden;
 }
+*/
 
 /* Description becomes part of the flow (NOT overlay) and expands */
 .card-desc {
@@ -166,3 +168,5 @@ html { scroll-behavior: smooth; }
 
 /* Grid alignment so taller cards flow naturally */
 .project-grid { align-items: start; }
+
+#about { padding-top: 72px; }
