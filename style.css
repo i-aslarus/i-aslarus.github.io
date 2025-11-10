@@ -112,3 +112,57 @@ a:hover { color: var(--accent); }
   .headshot { width: 120px; height: 120px; }
 }
 html { scroll-behavior: smooth; }
+
+/* EXPAND-ON-HOVER/CHECK: let the description push layout instead of overlaying */
+
+/* Card stays light, subtle hover */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease, background 140ms ease;
+  overflow: visible; /* allow growth */
+}
+.card:hover, .card:focus-within {
+  background: var(--card-hover);
+  border-color: var(--border);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* Title fades out when open (matches your earlier request) */
+.card-title {
+  transition: opacity 120ms ease;
+}
+.card:hover .card-title,
+.card.is-open .card-title {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Description becomes part of the flow (NOT overlay) and expands */
+.card-desc {
+  position: static;              /* was absolute */
+  background: transparent;       /* no dark overlay */
+  border: 0;
+  padding: 8px 0 0;
+  margin: 0;
+
+  max-height: 0;                 /* collapsed by default */
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  transition: max-height 240ms ease, opacity 160ms ease;
+}
+
+/* Hover (desktop) or .is-open (mobile/keyboard) reveals full text */
+.card:hover .card-desc,
+.card.is-open .card-desc {
+  max-height: 1000px;            /* big enough to fit long text */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Grid alignment so taller cards flow naturally */
+.project-grid { align-items: start; }
