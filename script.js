@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "Early insight into social network structure predicts climbing the social ladder",
-    desc: "Does what people know about their surrounding social network have implications for social success? In a longitudinal study of an emerging social network, we find that individuals who are aware of their network's community structure rise to more influential positions over time. See our <a href="https://www.science.org/doi/10.1126/sciadv.ads2133" target="_blank" rel="noopener">publication</a> in <em>Science Advances</em> to learn more!",
+    desc: "Does what people know about their surrounding social network have implications for social success? In a longitudinal study of an emerging social network, we find that individuals who are aware of their network's community structure rise to more influential positions over time.",
     tag: "Publication"
   }
 ];
