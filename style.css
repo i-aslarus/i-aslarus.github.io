@@ -1,13 +1,13 @@
 :root {
-  --bg: #0f1115;
-  --panel: #151822;
-  --text: #e9ecf1;
-  --muted: #aab2c3;
-  --brand: #7dd3fc;
-  --accent: #a78bfa;
-  --card: #1a1f2b;
-  --card-hover: #232a3b;
-  --border: #2a3246;
+  --bg: #fffdf8;          /* almost white, with a hint of cream */
+  --panel: #faf6ee;       /* slightly darker cream for headers/nav */
+  --text: #044a48;        /* very dark turquoise */
+  --muted: #457a77;       /* muted turquoise for secondary text */
+  --brand: #007a74;       /* accent turquoise */
+  --accent: #00a79d;      /* brighter turquoise hover accent */
+  --card: #f9f4eb;        /* light cream for project blocks */
+  --card-hover: #f3ede1;  /* slightly darker on hover */
+  --border: #ddd3c3;      /* warm, subtle border */
 }
 
 * { box-sizing: border-box; }
