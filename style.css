@@ -92,8 +92,9 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; }
 }
 .card:hover .card-title,
 .card.is-open .card-title {
-  opacity: 0;
-  visibility: hidden; /* prevents screen readers from double-reading */
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: opacity 120ms ease;
 }
 
 
