@@ -80,7 +80,7 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; color: var(--brand); }
   border-radius: 14px; border: 1px solid var(--border);
 }
 .card:hover .card-desc, .card.is-open .card-desc { opacity: 1; pointer-events: auto; }
-.card-desc p { margin: 0; color: var(--muted); }
+.card-desc p { margin: 0; color: var(--text); }
 .card-badge {
   display: inline-block; margin-top: 10px; font-size: 12px; color: var(--brand);
   background: rgba(125,211,252,0.08); border: 1px solid rgba(125,211,252,0.25);
@@ -94,7 +94,7 @@ h2 { font-size: 1.6rem; margin: 0 0 18px; color: var(--brand); }
 }
 .card:hover .card-title,
 .card.is-open .card-title {
-  color: var(--brand);   /* brighter turquoise for emphasis */
+  color: var(--accent);   /* brighter turquoise for emphasis */
   font-weight: 700;
   letter-spacing: 0.2px;
   transition: opacity 120ms ease;
