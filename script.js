@@ -4,34 +4,39 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // ----- define your projects here (title, description, optional tag)
 const projects = [
   {
-    title: "Project One: Short Title",
-    desc: "One-sentence (or two) description of what you built, why it matters, and the method or dataset.",
-    tag: "Manuscript"
+    title: "Empathic accuracy and interpersonal emotion regulation in dyadic experience sampling",
+    desc: "During social interactions, people infer how each other feels, with varying levels of accuracy. Does our insight into what another person feels support our efficacy at regulating their emotions?",
+    tag: "Ongoing"
   },
   {
-    title: "Project Two: Short Title",
-    desc: "Brief description highlighting the research question and approach. Add a link if desired.",
-    tag: "Preprint"
+    title: "Depression alters anticipated and experienced emotions during social interactions and solitude",
+    desc: "Depression is characterized by social withdrawal, but it remains unknown whether this is driven by differences in emotional experience during sociality. Do depressive symptoms affect the way we anticipate and experience the emotional benefits of sociality?",
+    tag: "Ongoing"
   },
   {
-    title: "Project Three",
-    desc: "A sentence about design/experiment + key finding. Keep it concise but informative.",
-    tag: "Experiment"
+    title: "Community-level emotional synchrony and idiosyncrasy in depression",
+    desc: "What does it mean to be emotionally 'in sync' with one's community? How might different types of emotional idiosyncrasy emerge as downstream consequences of—and upstream risk factors for—depression?",
+    tag: "Ongoing"
   },
   {
-    title: "Project Four",
-    desc: "Computational or statistical piece? Summarize the technique and application in plain language.",
-    tag: "Methods"
-  },
-  {
-    title: "Project Five",
-    desc: "Another project. Mention collaborators or lab if relevant and a one-line impact statement.",
+    title: "Social buffering of stress during a presidential election",
+    desc: "In a project led by Su Doga Karaca, a full-time research assistant in the SSNL, we explore how political conversation affects momentary fluctuations in stress during a national political stressor.",
     tag: "Collab"
   },
   {
-    title: "Project Six",
-    desc: "Anything else you’d like to highlight—poster, dataset, tool, or workshop.",
-    tag: "Poster"
+    title: "Loneliness is predicted by social network uncertainty and instability",
+    desc: "In a project led by Molina Zhang, a PhD student in the FeldmanHall lab at Brown, we are investigating how loneliness is linked to veridical and perceived features of the broader social network surrounding an individual.",
+    tag: "Collab"
+  },
+  {
+    title: "Distinct mechanisms of social category perception bias social learning",
+    desc: "Multiple cognitive mechanisms enable people to represent discrete categories, including social categories, that are defined by continuous underlying dimensions. At a computational level, how might the nature of our representations lead us astray during future social learning, with consequences like stereotype formation?",
+    tag: "Ongoing"
+  },
+  {
+    title: "Early insight into social network structure predicts climbing the social ladder",
+    desc: "Does what people know about their surrounding social network have implications for social success? In a longitudinal study of an emerging social network, we find that individuals who are aware of their network's community structure rise to more influential positions over time.",
+    tag: "Publication"
   }
 ];
 
